@@ -39,7 +39,7 @@ fun NewProductView(navController: NavController, viewModel: ProductsViewModel) {
         topBar = {
             CenterAlignedTopAppBar(
                 title = {
-                    Text(text = "Agregar View", color = Color.White, fontWeight = FontWeight.Bold)
+                    Text(text = "Agregar Producto", color = Color.White, fontWeight = FontWeight.Bold)
                 },
                 colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primary
