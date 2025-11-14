@@ -22,7 +22,7 @@ import com.example.myapp.viewmodel.AuthViewModel
 fun RegisterView(
     viewModel: AuthViewModel,
     onRegisterSuccess: () -> Unit,
-    onBackToLogin: () -> Unit // 🔹 Nuevo parámetro para regresar al login
+    onBackToLogin: () -> Unit
 ) {
     val state by viewModel.state.collectAsState()
 
@@ -30,7 +30,7 @@ fun RegisterView(
         onRegisterSuccess()
     }
 
-    // 🔹 Centrar contenido
+    // Centrar contenido
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -79,7 +79,7 @@ fun RegisterView(
                 Text("Registrar")
             }
 
-            // 🔹 Botón para volver al login
+            // Botón para volver al login
             TextButton(
                 onClick = onBackToLogin,
                 modifier = Modifier.align(Alignment.End)

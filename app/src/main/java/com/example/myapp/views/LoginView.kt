@@ -26,7 +26,7 @@ fun LoginView(viewModel: AuthViewModel, onRegisterClick: () -> Unit, onLoginSucc
         onLoginSuccess()
     }
 
-    // 🔹 Box para centrar el contenido
+    // Box para centrar el contenido
     Box(
         modifier = Modifier
             .fillMaxSize()
